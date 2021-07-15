@@ -447,7 +447,9 @@ h1 {
             width: 100%;
             display: none;
         }
-
+        .navbar__menu__item.active{
+            border: none;
+        }
         .about__majors{
             flex-direction: column;
         }
