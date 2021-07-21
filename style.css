@@ -5,8 +5,8 @@
     --color-white: #ffffff;
     --color-light-white: #eeeeee;
     --color-dark-white: #bdbdbd;
-    --color-pink: #fe918d;
-    --color-dark-pink: #ff6863;
+    --color-pink: #D684B7;
+    --color-dark-pink: #c80aee;
     --color-dark-grey: #4d4d4d;
     --color-grey: #616161;
     --color-light-grey: #7c7979;
@@ -93,12 +93,19 @@ h1 {
 
   /* Navbar */
   #navbar{
+      position: fixed;
+      width: 100%;
       display: flex;
       justify-content: space-between;
-      background-color: var(--color-pink);
+      background-color: transparent;
       align-items: center;
       color: var(--color-white);
       padding: 16px;
+      transition: all var(--animation-duration) ease-in-out;
+  }
+  #navbar.navbar--dark{
+      background-color: var(--color-pink);
+      padding: 8px;
   }
   .navbar__logo{
       font-size: var(--font-medium);
@@ -131,16 +138,17 @@ h1 {
   }
   /* Home */
   #home{
-      background: url("imgs/home-background.png") center/cover no-repeat;
+      background: url("imgs/homebackground.png") center/cover no-repeat;
       padding: 40px;
       text-align: center;
+      padding-top: 120px;
   }
 
   .home__avatar{
       width: 250px;
       height: 250px;
       border-radius: 50%;
-      border:  2px solid var(--color-white);
+      border:  2px solid var(--color-pink);
   }
 
   .home__title,
@@ -321,7 +329,7 @@ h1 {
       justify-content: center;
       align-items: center;
       width: 280px;
-      height: 250px;
+      height: 280px;
       margin: 2px;
       background-color: var(--color-light-white);
   }
@@ -427,7 +435,7 @@ h1 {
    }
    .contact__links i:hover{
        transform: scale(1.1);
-       color: var(--color-yellow);
+       color: var(--color-dark-pink);
    }
 
    /* For below 768px screen width */
