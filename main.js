@@ -17,12 +17,22 @@ document.addEventListener('scroll', () => {
 //Handle scrolling when tapping on the navbar menu
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
+    // 클릭이 되면 우리가 만든 함수가 호출이 되도록 하는 것
   const target = event.target;
   const link = target.dataset.link;
   if (link == null) {
     return;
   }
-    console.log(event.target.dataset.link);
-    const scrollTo = document.querySelector(link);
-    scrollTo.scrollIntoView({behavior: "smooth"});
+    scrollIntoView(link);
 });
+
+//Handle click on 'contact me' button on home
+const homeContactBtn = document.querySelector('.home__contact');
+homeContactBtn.addEventListener('click', () => {
+    scrollIntoView('#contact')
+});
+
+function scrollIntoView(selector){
+    const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({behavior: "smooth"});
+}
