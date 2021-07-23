@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kylie's portfolio</title>
+    <title>Soohyun's portfolio</title>
     <meta name="description" content="portfolio">
     <meta name="author" content="Kylie">
-    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <link rel="icon" type="image/png" href="imgs/heart.png" />
     <script src="https://kit.fontawesome.com/24069a5071.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
@@ -81,6 +81,17 @@
         </div>
         <div class="about__jops">
             <div class="job">
+                <div class="job">
+                    <img src="imgs/jobs/thejoeun_logo.jpg"
+                    alt="SK M&SERVICE" 
+                    class="job__logo">
+                    <div class="job__description">
+                        <p class="job__name">더조은컴퓨터아카데미 웹퍼블리셔 실무자 양성 </p>
+                        <p class="job__period">2017.04 - 2019.10</p>
+                    </div>
+                </div>
+            </div>
+            <div class="job">
                 <img src="imgs/jobs/logo-placem.gif"
                 alt="플레이스엠" 
                 class="job__logo">
@@ -100,6 +111,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </section>
 
@@ -198,23 +210,23 @@
             <h1>My work</h1>
             <h3>Projects</h3>
             <div class="work__categories">
-                <button class="category__btn active">
+                <button class="category__btn active" data-filter="*">
                     전체<span class="category__count">1</span>
                 </button>
-                <button class="category__btn">
+                <button class="category__btn" data-filter="반응형">
                     반응형<span class="category__count">1</span>
                 </button>
-                <button class="category__btn">
-                    기본형<span class="category__count">1</span>
+                <button class="category__btn" data-filter="웹사이트">
+                    웹사이트<span class="category__count">1</span>
                 </button>
-                <button class="category__btn">
+                <button class="category__btn" data-filter="디자인">
                     디자인<span class="category__count">3</span>
                 </button>
             </div>
 
             <div class="work__projects">
                 
-                <a href="" class="project" target="blank">
+                <a href="" class="project" target="blank" data-type="반응형">
                     <img class="project__img" src="imgs/projects/logo-skm&service.png" alt="">
                     <div class="project__description">
                         <h3>Youtube Site</h3>
@@ -222,7 +234,7 @@
                     </div>
                 </a>
 
-                <a href="" class="project" target="blank">
+                <a href="" class="project" target="blank" data-type="웹사이트">
                     <img class="project__img" src="imgs/projects/logo-skm&service.png" alt="">
                     <div class="project__description">
                         <h3>Youtube Site</h3>
@@ -230,31 +242,31 @@
                     </div>
                 </a>
 
-                <a href="" class="project" target="blank">
-                    <img class="project__img" src="imgs/projects/logo-skm&service.png" alt="">
-                    <div class="project__description">
-                        <h3>Youtube Site</h3>
-                        <span>Clone coding with HTML and CSS</span>
-                    </div>
-                </a>
-                
-                <a href="" class="project" target="blank">
-                    <img class="project__img" src="imgs/projects/logo-skm&service.png" alt="">
-                    <div class="project__description">
-                        <h3>Youtube Site</h3>
-                        <span>Clone coding with HTML and CSS</span>
-                    </div>
-                </a>
-                
-                <a href="" class="project" target="blank">
+                <a href="" class="project" target="blank" data-type="디자인">
                     <img class="project__img" src="imgs/projects/webdesign_01.jpg" alt="">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+                
+                <a href="" class="project" target="blank" data-type="디자인">
+                    <img class="project__img" src="imgs/projects/poster_01.jpg" alt="">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+                
+                <a href="" class="project" target="blank" data-type="디자인">
+                    <img class="project__img" src="imgs/projects/logo_01.jpg" alt="">
                     <div class="project__description">
                         <h3>WEP DESIGN</h3>
                         <span>Clone coding with HTML and CSS</span>
                     </div>
                 </a>
 
-                <a href="" class="project" target="blank">
+                <!-- <a href="" class="project" target="blank">
                     <img class="project__img" src="imgs/projects/poster_01.jpg" alt="">
                     <div class="project__description">
                         <h3>POSTER DESIGN</h3>
@@ -268,7 +280,7 @@
                         <h3>LOGO DESIGN</h3>
                         <span>Clone coding with HTML and CSS</span>
                     </div>
-                </a>
+                </a> -->
 
             </div>
         </div>
@@ -308,7 +320,7 @@
     <!-- Contact -->
     <section id="contact" class="section">
         <h1 class="contact__title">Let's talk</h1>
-        <h2 class="contact__email">kylie0214@naver.com</h2>
+        <h2 class="contact__email">soohyun1589@naver.com</h2>
         <div class="contact__links">
             <a href="" target="blank">
                 <i class="fab fa-github"></i>
