@@ -26,6 +26,7 @@ navbarMenu.addEventListener('click', (event) => {
     scrollIntoView(link);
 });
 
+
 //Handle click on 'contact me' button on home
 const homeContactBtn = document.querySelector('.home__contact');
 homeContactBtn.addEventListener('click', () => {
@@ -66,6 +67,14 @@ workBtnContainer.addEventListener('click', (e)=>{
         return;
         // 필터가 null이면 아무것도 해주지 않는다
     }
+
+    // Remove selection from the previous item and select the new one
+    const active = document.querySelector('.category__btn.selected');
+    active.classList.remove('selected');
+    const target = 
+    e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+    e.target.classList.add('selected');
+    // ? 왼쪽의 내용이 맞으면 실행하고 아니면 ? 오른쪽을 실행해라
     
     projectContainer.classList.add('anim-out');
     setTimeout(() => {
