@@ -41,7 +41,7 @@
 }  
 body{
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     cursor: default;
 }
 /* Typography */
@@ -118,6 +118,7 @@ h1 {
   .navbar__menu__item{
       padding: 8px 12px;
       margin: 4px;
+      font-size: var(--font-regular);
       cursor: pointer;
       border-radius: var(--size-border-radius);
       border: 1px solid transparent;
