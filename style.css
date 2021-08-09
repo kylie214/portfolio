@@ -90,7 +90,6 @@ h1 {
     color: var(--color-black);
     margin: 4px 0;
   }
-
   /* Navbar */
   #navbar{
       position: fixed;
@@ -128,9 +127,8 @@ h1 {
   .navbar__menu__item:hover {
       background-color: var(--color-dark-pink);
       border-color: var(--color-white);
-      
-      
   }
+
   .navbar__toggle-btn{
       position: absolute;
       right: 32px;
